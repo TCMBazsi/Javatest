@@ -8,7 +8,7 @@ public class Gyak{
         first.setAge(18);
         first.Helloworld();
         first.Blizzard();
-        first.setNumber(100/85+666+4);
+        first.setNumber(100/85+666+4+5);
         first.getNumber();
         first.IF();
     }
