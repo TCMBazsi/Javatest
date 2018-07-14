@@ -5,11 +5,11 @@ import java.io.IOException;
 
 public class Main {
 
-    public static void main(String[] args){
+    public static void main(String[] args) throws IOException {
         Writer w = new Writer();
         Reader r = new Reader();
-        r.Read();
-        w.write();
+        w.buffer();
+        r.buffer();
     }
     
 }

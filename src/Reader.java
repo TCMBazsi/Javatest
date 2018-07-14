@@ -1,22 +1,28 @@
 
 package inandout;
 
+import java.io.BufferedInputStream;
 import java.io.FileInputStream;
 import java.io.IOException;
 import java.util.logging.Logger;
 
 public class Reader {
-     public void readchar() {
-        try {
-            try (FileInputStream fis = new FileInputStream("In.txt")) {
-                int i = fis.read();
-                System.out.println((char)i);
-            }
-        } catch (IOException ex) {
-            Logger.getLogger("" +ex);
-        }    
+    public void buffer(){
+         try {
+              FileInputStream fis = new FileInputStream("In.txt");
+              BufferedInputStream bf = new BufferedInputStream(fis);
+              int c = 0;
+              String x = "";
+               while((c=bf.read())!= -1){
+                 x += (char) c;
+              } 
+              System.out.println(x);
+              fis.close();
+         }
+         catch (Exception ex){
+         Logger.getLogger(" " + ex);   
+         }
     }
-     
     public void Read(){
          try {
              FileInputStream fis = new FileInputStream("In.txt");
