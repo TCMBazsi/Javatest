@@ -27,6 +27,7 @@ public class Writer {
             fos.write(a);
             fos.flush();
             fos.close();
+            System.out.println("Kész vagyok");
         } catch (Exception ex) {
             Logger.getLogger(" "+ex);
         }
