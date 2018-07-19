@@ -1,4 +1,4 @@
 # Javatest
 
 # Build: 
-  bash Build.sh
+  bash build.sh
